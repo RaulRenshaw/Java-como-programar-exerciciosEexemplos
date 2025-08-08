@@ -7,18 +7,15 @@ public class AccountTest {
 
         Scanner scanner = new Scanner(System.in);
 
-        Account account = new Account();
 
-        System.out.printf("Initial name is: %n%s%n", account);
-
-        System.out.printf("Please enter the name:");
-
-        String theName = scanner.nextLine();
-        account.setName(theName);
-        System.out.println("");
+        Account account = new Account("john derheer");
+        Account account2 = new Account("maria jose");
 
         System.out.printf("Name in object account is %n%s%n",
                 account.getName());
+
+        System.out.printf("Name in object account2 is %n%s%n",
+                account2.getName());
 
     }
 }
