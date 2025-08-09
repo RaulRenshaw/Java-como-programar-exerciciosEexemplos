@@ -28,8 +28,18 @@ public class Account {
         return balance;
     }
 
-    public String displayAccount( ){
-        return name + balance;
+    public void displayAccount( ){
+        System.out.println(name + balance);;
     }
+
+    public void withdraw(double withdrawal){
+        if (withdrawal > balance){
+            System.out.printf("Withdrawal amount exceeded account balance: balance %s e withdrawal: %s%n", balance, withdrawal);
+        }else{
+            balance -= withdrawal;
+        }
+    }
+
+
 
 }

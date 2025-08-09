@@ -37,5 +37,7 @@ public class AccountTest {
         account.displayAccount();
         account2.displayAccount();
 
+        account.withdraw(200);
+
     }
 }
