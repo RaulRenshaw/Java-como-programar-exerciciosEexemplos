@@ -29,7 +29,7 @@ public class Account {
     }
 
     public static void displayAccount(Account accountToDisplay){
-        System.out.println(accountToDisplay.getName(), accountToDisplay.getBalance());;
+        System.out.println(accountToDisplay);
     }
 
     public void withdraw(double withdrawal){
