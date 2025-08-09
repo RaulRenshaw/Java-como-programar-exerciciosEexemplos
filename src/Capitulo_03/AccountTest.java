@@ -11,11 +11,9 @@ public class AccountTest {
         Account account = new Account("john derheer", 50.00);
         Account account2 = new Account("maria jose", -7.53);
 
-        System.out.printf("%s balance: %s.2f %n",
-                account.getName(), account.getBalance());
 
-        System.out.printf("%s balance: %s.2f %n",
-                account2.getName(), account2.getBalance());
+        account.displayAccount();
+        account2.displayAccount();
 
         System.out.println("Enter deposit amount for account:");
 
@@ -25,11 +23,8 @@ public class AccountTest {
         , depositAmount);
         account.deposit(depositAmount);
 
-        System.out.printf("%s balance: %s.2f %n",
-                account.getName(), account.getBalance());
-
-        System.out.printf("%s balance: %s.2f %n",
-                account2.getName(), account2.getBalance());
+        account.displayAccount();
+        account2.displayAccount();
 
         System.out.println("Enter deposit amount for account2:");
 
@@ -39,11 +34,8 @@ public class AccountTest {
                 , depositAmount);
         account2.deposit(depositAmount);
 
+        account.displayAccount();
+        account2.displayAccount();
 
-        System.out.printf("%s balance: %s.2f %n",
-                account.getName(), account.getBalance());
-
-        System.out.printf("%s balance: %s.2f %n",
-                account2.getName(), account2.getBalance());
     }
 }

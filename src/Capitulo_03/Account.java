@@ -28,4 +28,8 @@ public class Account {
         return balance;
     }
 
+    public String displayAccount( ){
+        return name + balance;
+    }
+
 }
