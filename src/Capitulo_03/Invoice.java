@@ -13,6 +13,14 @@ public class Invoice {
         this.preco = preco;
     }
 
+    public double getInvoiceAmount(){
+        double total = quantidadeComprada * preco;
+        if (total < 0){
+            return 0;
+        }
+        return total;
+    }
+
     public String getNumero() {
         return numero;
     }
@@ -45,11 +53,4 @@ public class Invoice {
         this.preco = preco;
     }
 
-    public double getInvoiceAmount(){
-        double total = quantidadeComprada * preco;
-        if (total < 0){
-            return 0;
-        }
-        return total;
-    }
 }

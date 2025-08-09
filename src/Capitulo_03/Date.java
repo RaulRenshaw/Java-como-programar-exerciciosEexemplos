@@ -11,6 +11,14 @@ public class Date {
         this.ano = ano;
     }
 
+    public void displayDate(){
+        System.out.printf("%s/%s/%s", dia,mes,ano);
+    }
+
+    public int ageInYear(int ano){
+        return 2025 - ano;
+    }
+
     public int getDia() {
         return dia;
     }
@@ -35,7 +43,4 @@ public class Date {
         this.ano = ano;
     }
 
-    public void displayDate(){
-        System.out.printf("%s/%s/%s", dia,mes,ano);
-    }
 }
