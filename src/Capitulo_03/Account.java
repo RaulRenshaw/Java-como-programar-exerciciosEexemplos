@@ -28,8 +28,8 @@ public class Account {
         return balance;
     }
 
-    public void displayAccount( ){
-        System.out.println(name + balance);;
+    public static void displayAccount(Account accountToDisplay){
+        System.out.println(accountToDisplay.getName(), accountToDisplay.getBalance());;
     }
 
     public void withdraw(double withdrawal){

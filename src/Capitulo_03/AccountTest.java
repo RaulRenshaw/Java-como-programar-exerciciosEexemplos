@@ -12,8 +12,8 @@ public class AccountTest {
         Account account2 = new Account("maria jose", -7.53);
 
 
-        account.displayAccount();
-        account2.displayAccount();
+        Account.displayAccount(account);
+        Account.displayAccount(account2);
 
         System.out.println("Enter deposit amount for account:");
 
@@ -23,8 +23,8 @@ public class AccountTest {
         , depositAmount);
         account.deposit(depositAmount);
 
-        account.displayAccount();
-        account2.displayAccount();
+        Account.displayAccount(account);
+        Account.displayAccount(account2);
 
         System.out.println("Enter deposit amount for account2:");
 
@@ -34,8 +34,8 @@ public class AccountTest {
                 , depositAmount);
         account2.deposit(depositAmount);
 
-        account.displayAccount();
-        account2.displayAccount();
+        Account.displayAccount(account);
+        Account.displayAccount(account2);
 
         account.withdraw(200);
 
